@@ -1,0 +1,92 @@
+/*----------Style Defaults----------*/
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: medium;
+	color: #4a4a4a;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+}
+
+
+/*----------Main Content----------*/
+#searchBar {
+	width: 166px;
+	height: 40px;
+	margin: 30px 0 20px;
+	padding: 0 15px;
+	background-color: #fff;
+	border: 2px solid #e5e5e5;
+	border-radius: 5px;
+	font-weight: 300;
+	font-size: small;
+}
+
+#gallery {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 40px;
+	padding-bottom: 10px;
+}
+
+a {
+	width: 200px;
+	height: 200px;
+	margin: 20px auto;
+}
+
+/*----------Fancybox Edits----------*/
+.fancybox-navigation button:before {
+	background: none;
+}
+
+.fancybox-button svg path {
+	color: white;
+}
+
+.fancybox-image {
+	width: 70%;
+	top: 15%;
+	left: 15%;
+	height: auto;
+}
+
+.fancybox-caption {
+	border: none;
+}
+
+
+/*----------Media Queries--------------------------------------------------*/
+/*---Break Point: 768px---*/
+@media screen and (min-width: 768px) {
+	/*----------Main Content----------*/
+	#searchBar {
+		width: 406px;
+	}
+	
+	#gallery {
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 720px;
+	}
+	
+	a {
+		margin: 20px;
+	}
+	
+	/*----------Fancybox Edits----------*/	
+	.fancybox-image {
+		width: 80%;
+		top: 10%;
+		left: 10%;
+	}
+}
+
+
+/*---Break Point: 1024px---*/
+@media screen and (min-width: 1024px) {
+	/*----------Main Content----------*/
+	#gallery {
+		width: 960px;
+	}
+}
