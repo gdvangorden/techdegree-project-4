@@ -7,10 +7,10 @@ function imageSearch() {
 	photoGallery = document.getElementById('gallery');
 	photo = photoGallery.children;
 	
-	//Loop through photos and compare user's search to image captions
+	//Loop through photos and compare captions to user's search input
 	for (i = 0; i < photo.length; i++) {
 		p = photo[i];
-		if (search = photo.getAttribute('data-caption').toLowerCase()) {
+		if (p.getAttribute('data-caption').toLowerCase().indexOf(search) > -1) {
 			photo[i].style.display = "";
 		} else {
 			photo[i].style.display = "none";
