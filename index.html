@@ -17,10 +17,10 @@
 <body>
 <!--Search-->
 	<form>
-		<input type="text" id="searchBar" placeholder="Search(16pt)">
+		<input type="text" id="searchBar" onkeyup="imageSearch()" placeholder="Search(16pt)">
 	</form>
 	
-<!--Gallery-->	
+<!--Gallery-->
 	<section id="gallery">
 		<a href="images/01.jpg" data-fancybox="gallery" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
 			<img src="images/thumbnails/01.jpg" alt="Hay Bales"></a>
@@ -48,14 +48,16 @@
 			<img src="images/thumbnails/12.jpg" alt="Bluebells"></a>
 	</section>
 
+<!--JavaScript-->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/fancybox/jquery.fancybox.min.js"></script>
+		<script type="text/javascript">
+			$("[data-fancybox]").fancybox({
+				toolbar: false,
+			});
+		</script>
 	
-	<script type="text/javascript">
-		$("[data-fancybox]").fancybox({
-			toolbar: false,
-		});
-	</script>
+	<script src="js/scripts.js"></script>
 
 </body>
 
