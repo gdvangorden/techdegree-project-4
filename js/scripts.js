@@ -1,7 +1,7 @@
 
 function imageSearch() {
 	//Declare Variables
-	var userSearch, search, photoGallery, photo;
+	var userSearch, search, photoGallery, photo, i, p;
 	userSearch = document.getElementById('searchBar');
 	search = userSearch.value.toLowerCase();
 	photoGallery = document.getElementById('gallery');
